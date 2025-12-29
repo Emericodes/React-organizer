@@ -1,3 +1,53 @@
+This project is a personal productivity dashboard designed to mimic a modern, glassmorphism-styled desktop. It allows users to manage tasks, check the time, and listen to focus music in a fully interactive environment. Everything is draggable and customizable.
+
+✨ Key Features
+📝 Smart Sticky Notes (Post-its):
+
+Drag and drop notes anywhere on the screen.
+
+Dual Mode: Switch between simple text memos and checkable To-Do lists.
+
+Auto-save: Data is persisted using localStorage (no data loss on refresh).
+
+Color coding (Yellow, Cyan, Salmon).
+
+Clock Customization:
+
+Switch between Digital and Analog (hands) modes.
+
+Fully customizable colors (digits, hands, background).
+
+Adjustable positioning (Top-Left, Center, Top-Right) via the Settings menu.
+
+⚙️ Settings Panel:
+
+Centralized control for user preferences (Lifting State Up pattern).
+
+Tech Stack
+Core: React 19, TypeScript, Vite.
+
+Styling: CSS3 (Variables, Flexbox, Glassmorphism effects).
+
+Libraries: react-draggable, react-icons.
+
+Concepts: Hooks (useState, useEffect, useRef), Component Architecture, Props Drilling & Lifting State Up.
+
+How to run locally 
+
+# 1. Clone the repository
+git clone https://github.com/TON-PSEUDO/React-organizer.git
+
+# 2. Enter the folder
+cd React-organizer
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the dev server
+npm run dev
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
