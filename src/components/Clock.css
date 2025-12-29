@@ -1,0 +1,151 @@
+:root {
+	--font-family-clock: "Poppins", sans-serif;
+}
+
+.clock-container {
+	position: absolute;
+	top: 180px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	z-index: 1000;
+	display: flex;
+	pointer-events: none;
+}
+
+.pos-top-left {
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-top: 40px;
+}
+
+.pos-center {
+	justify-content: center;
+	padding-top: 150px;
+}
+
+.pos-top-right {
+	justify-content: flex-end;
+	padding-right: 50px;
+	padding-top: 20px;
+}
+
+.clock-digital-style,
+.clock-face {
+	pointer-events: auto;
+	box-shadow: 0 4px 15px rgba(169, 168, 168, 0.2);
+	transition: all 0.5s ease;
+}
+
+.clock-digital-style {
+	display: flex;
+	justify-content: center;
+	font-size: 6rem;
+	font-family: var(--font-family-clock);
+	padding: 60px;
+	border-radius: 20px;
+	backdrop-filter: blur(5px);
+	align-items: center;
+}
+
+.clock-face {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border-width: 8px;
+	border-style: solid;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.center-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+}
+
+.hand {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform-origin: bottom center;
+	border-radius: 4px;
+	z-index: 2;
+}
+
+.hour-hand {
+	width: 6px;
+	height: 50px;
+}
+
+.min-hand {
+	width: 4px;
+	height: 70px;
+}
+
+.sec-hand {
+	width: 2px;
+	height: 85px;
+	background: red;
+	z-index: 3;
+}
+
+.num {
+	position: absolute;
+	font-family: var(--font-family-clock);
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.num-12 {
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.num-6 {
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.num-3 {
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.num-9 {
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+	.clock-digital-style {
+		font-size: 3rem;
+	}
+
+	.clock-face {
+		width: 150px;
+		height: 150px;
+	}
+
+	.pos-top-left,
+	.pos-top-right {
+		padding: 20px;
+		justify-content: center;
+	}
+
+	.hand.hour-hand {
+		height: 35px;
+	}
+	.hand.min-hand {
+		height: 55px;
+	}
+	.hand.sec-hand {
+		height: 65px;
+	}
+}

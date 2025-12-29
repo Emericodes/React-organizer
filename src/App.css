@@ -1,0 +1,10 @@
+.app-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.app-container h1 {
+	color: var(--color);
+	font-family: var(--font-family-h1);
+}
