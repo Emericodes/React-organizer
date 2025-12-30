@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Settings_Logo from "../assets/images/settings.png";
-import "./settings.css";
+import "./Settings.css";
 
 interface SettingsProps {
 	currentClockMode: "digital" | "analog";
