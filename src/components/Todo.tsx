@@ -1,7 +1,7 @@
-import { type ChangeEvent, useState, useEffect, useRef } from "react";
+import { type ChangeEvent, useEffect, useRef, useState } from "react";
 import Draggable from "react-draggable";
-import { FaTrash, FaPlus, FaListUl, FaFont } from "react-icons/fa";
-import { MdCheckBoxOutlineBlank, MdCheckBox } from "react-icons/md";
+import { FaFont, FaListUl, FaPlus, FaTrash } from "react-icons/fa";
+import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
 import "./Todo.css";
 
 interface TodoItem {
